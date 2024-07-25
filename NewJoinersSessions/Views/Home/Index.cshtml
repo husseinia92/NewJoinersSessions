@@ -1,0 +1,12 @@
+﻿@model NewJoinersSessions.Models.VehicleInfoViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Select a vehicle to view its information:</p>
+    <button onclick="location.href='@Url.Action("ShowCarInfo", "Home")'" class="btn btn-primary">Show Car Info</button>
+    <button onclick="location.href='@Url.Action("ShowMotorcycleInfo", "Home")'" class="btn btn-secondary">Show Motorcycle Info</button>
+</div>

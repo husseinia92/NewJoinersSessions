@@ -1,0 +1,11 @@
+﻿@model NewJoinersSessions.Models.VehicleInfoViewModel
+
+@{
+    ViewData["Title"] = "Vehicle Info";
+}
+
+<div class="text-center">
+    <h2>Vehicle Information</h2>
+    <p>@Model.Info</p>
+    <button onclick="location.href='@Url.Action("Index", "Home")'" class="btn btn-primary">Back</button>
+</div>
